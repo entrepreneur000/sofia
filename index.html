@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fofia & Ali</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	
+	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
+		<span></span>
+		<div class="flex-col-c p-t-50 p-b-50">
+			<h3 class="l1-txt1 txt-center p-b-10">
+				Love Forever ❤️
+			</h3>
+			<p class="txt-center l1-txt2 p-b-20 love-date">
+				I Love You My Princess 
+			</p>
+			<p class="txt-center l1-txt2 p-b-20 love-date">
+				Sofia & Ali
+			</p>
+			<p class="txt-center l1-txt2 p-b-50 love-date">
+				❤️ 22.04.2025 ❤️
+			</p>
+			<div class="flex-w flex-c cd100 p-b-82">
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 days">35</span>
+					<span class="s1-txt1">Days</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 hours">17</span>
+					<span class="s1-txt1">Hours</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 minutes">50</span>
+					<span class="s1-txt1">Minutes</span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span class="l1-txt3 p-b-9 seconds">39</span>
+					<span class="s1-txt1">Seconds</span>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+
+
+	<script>
+		// Başlangıç tarihi: 22 Nisan 2025
+		const startDate = new Date("2025-04-22T00:00:00");
+	
+		function updateCountUp() {
+			const now = new Date();
+			const diff = now - startDate;
+	
+			if (diff >= 0) {
+				const totalSeconds = Math.floor(diff / 1000);
+				const days = Math.floor(totalSeconds / (3600 * 24));
+				const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+				const minutes = Math.floor((totalSeconds % 3600) / 60);
+				const seconds = totalSeconds % 60;
+	
+				document.querySelector(".days").textContent = days;
+				document.querySelector(".hours").textContent = hours;
+				document.querySelector(".minutes").textContent = minutes;
+				document.querySelector(".seconds").textContent = seconds;
+			}
+		}
+	
+		// İlk çalıştırma
+		updateCountUp();
+	
+		// Her saniye güncelle
+		setInterval(updateCountUp, 1000);
+	</script>
+	
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
