@@ -28,7 +28,7 @@
 		<span></span>
 		<div class="flex-col-c p-t-50 p-b-50">
 			<h3 class="l1-txt1 txt-center p-b-10">
-				Love Forever ❤️
+				❤️ Forever ❤️
 			</h3>
 			<p class="txt-center l1-txt2 p-b-20 love-date">
 				I Love You My Princess 
@@ -80,12 +80,10 @@
 				const totalSeconds = Math.floor(diff / 1000);
 				const days = Math.floor(totalSeconds / (3600 * 24));
 				const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
-				const minutes = Math.floor((totalSeconds % 3600) / 60);
 				const seconds = totalSeconds % 60;
 	
 				document.querySelector(".days").textContent = days;
 				document.querySelector(".hours").textContent = hours;
-				document.querySelector(".minutes").textContent = minutes;
 				document.querySelector(".seconds").textContent = seconds;
 			}
 		}
