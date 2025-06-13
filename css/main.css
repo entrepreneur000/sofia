@@ -490,7 +490,12 @@ input.input100 {
 
 /*---------------------------------------------*/
 
-
+@media (max-width: 576px) {
+  .cd100 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 
 
